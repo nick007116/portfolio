@@ -80,28 +80,37 @@
                 body.classList.add("dark-mode");
             }
 
-            let element = document.querySelector('.toggle-theme1');
-            let button = document.getElementById('toggleButton');
-            var isToggled = localStorage.getItem('isToggled') === 'true' || false;
-            cor();
-            function cor() {
-                {
-                    if (isToggled) {
-                        // If the background color is toggled, set it to the normal color
-                        element.style.backgroundColor = 'initial';
-                    } else {
-                        // If the background color is not toggled, set it to the new color
-                        element.style.backgroundColor = '#333';
-                    }
-                    function toggleBackgroundColor() {
+          const toggleThemeButton = document.querySelector(".toggle-theme1");
+const body = document.body;
+const element = document.querySelector('.toggle-theme');
+const button = document.getElementById('toggleButton');
 
-                        // Toggle the state
-                        isToggled = !isToggled;
-                        localStorage.setItem('isToggled', isToggled);
+// Load saved theme preference
+const savedTheme = localStorage.getItem("theme");
+body.classList.toggle("dark-mode", savedTheme === "dark");
 
-                        // Apply the updated background color
-                        cor();
-                    }
-                }
-            }
+// Load saved toggle state
+let isToggled = localStorage.getItem('isToggled') === 'true' || false;
 
+toggleThemeButton.addEventListener("click", () => {
+    body.classList.toggle("dark-mode");
+    localStorage.setItem("theme", body.classList.contains("dark-mode") ? "dark" : "light");
+    toggleBackgroundColor();
+});
+
+function toggleBackgroundColor() {
+    if (isToggled) {
+        // If the background color is toggled, set it to the normal color
+        element.style.backgroundColor = 'initial';
+    } else {
+        // If the background color is not toggled, set it to the new color
+        element.style.backgroundColor = '#333';
+    }
+
+    // Toggle the state
+    isToggled = !isToggled;
+    localStorage.setItem('isToggled', isToggled);
+}
+
+// Initial call to set the background color based on the saved state
+toggleBackgroundColor();
