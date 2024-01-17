@@ -8,6 +8,9 @@ body {
 body .nav {
     background-color: #f9f9f9;
 }
+body .toggle-theme{
+    background-color: #f9f9f9;
+}
 
 body .footer-tag {
     background-color: #f9f9f9;
@@ -21,7 +24,6 @@ body .questionArea {
 body.dark-mode {
     transition: background-color 0.5s ease;
     background-color: #000000dd;
-    ;
     color: #fff;
 }
 
@@ -33,6 +35,9 @@ body.dark-mode .nav {
 
 body.dark-mode .nav ul a {
     color: white;
+}
+body.dark-mode .toggle-theme{
+    background-color: #696969;
 }
 
 body.dark-mode .footer-tag {
@@ -246,7 +251,6 @@ body {
 .toggle-theme {
     border: none;
     margin-left: 720px;
-    background-color: none;
     margin-top: 1px;
 }
 
