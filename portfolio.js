@@ -66,7 +66,7 @@
                     document.querySelector('.textArea1').style.display = 'block';
                 }
             }
-            const toggleThemeButton = document.querySelector(".toggle-theme");
+           /* const toggleThemeButton = document.querySelector(".toggle-theme");
             const body = document.body;
 
             toggleThemeButton.addEventListener("click", () => {
@@ -103,6 +103,6 @@
                         cor();
                     }
                 }
-            }
+            }*/
 
 
