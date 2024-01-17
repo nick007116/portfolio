@@ -89,7 +89,7 @@ function toggleBackgroundColor() {
         element.style.backgroundColor = 'initial';
     } else {
         // If the background color is not toggled, set it to the new color
-        element.style.backgroundColor = '#333';
+        element.style.backgroundColor = '#696969';
     }
 
     // Toggle the state
