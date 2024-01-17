@@ -1,0 +1,618 @@
+/* Default theme (light mode) */
+body {
+    background-color: #fff;
+    transition: background-color 0.5s ease;
+    color: black;
+}
+
+body .nav {
+    background-color: #f9f9f9;
+}
+
+body .footer-tag {
+    background-color: #f9f9f9;
+}
+
+body .questionArea {
+    background-color: #f9f9f9;
+}
+
+/* Dark mode */
+body.dark-mode {
+    transition: background-color 0.5s ease;
+    background-color: #000000dd;
+    ;
+    color: #fff;
+}
+
+body.dark-mode .nav {
+    background-color: #696969;
+    transition: background-color 0.5s ease;
+
+}
+
+body.dark-mode .nav ul a {
+    color: white;
+}
+
+body.dark-mode .footer-tag {
+    background-color: #696969;
+}
+
+body.dark-mode .questionArea {
+    background-color: #212121;
+    color: white;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden; /* Disable horizontal scrolling */
+}
+
+.loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff; /* Set your desired background color */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000; /* Set a high z-index to make sure it's on top of other elements */
+    transition: transform 1s;
+}
+
+.loading-screen h1 {
+    font-size: 24px;
+    color: #333; /* Set your desired text color */
+}
+
+.main-wrapper {
+    transform: translateY(0); /* Initial position */
+    transition: transform 1s;
+}
+
+.main-content {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s, transform 1s;
+}
+
+.chatbot {
+    margin-top: 430px;
+    margin-left: 92%;
+    position: fixed;
+    border: none;
+    background-color: #ffffffe0;
+    cursor: pointer;
+    /*chat bot img and text*/
+
+}
+
+.chatbot-container {
+    display: none;
+    position: relative;
+}
+
+.close-btn {
+    /*close button*/
+    position: absolute;
+    top: 5px;
+    right: 25%;
+    cursor: pointer;
+    font: 20px;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.close-btn:hover {
+    border: solid;
+    font: 20px;
+    padding: 20px;
+    border-radius: 100px;
+    border-style: none;
+    background-color: grey;
+}
+
+#p-tag {
+    /*para which contains this chatbot is created using html css and js*/
+    position: absolute;
+    left: 350px;
+    margin-top: -170px;
+}
+
+.questionArea {
+    border-radius: 20px;
+    border-style: solid;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 300px;
+    margin-right: 300px;
+    margin-bottom: 150px;
+    padding: 200px;
+    z-index: 9999;
+}
+
+.button-options {
+    margin-left: 350px;
+    margin-top: -500px;
+    font-size: 30px;
+}
+
+.btn-op {
+    /*buttons which contains chat with us about and price*/
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 10px 60px 60px 60px;
+    background-color: #7DF9FF;
+    border: none;
+    cursor: pointer;
+
+}
+
+.textArea {
+    /*this area displays the selected text*/
+    margin-left: 65%;
+    font-size: 15px;
+    background-color: #7DF9FF;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 60px 60px 10px 60px;
+    border: none;
+    padding: 10px;
+}
+
+.textArea1 {
+    /*This area displays the replay to selected text*/
+    margin-left: 350px;
+    font-size: 15px;
+    background-color: #7DF9FF;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 10px 60px 60px 60px;
+    border: none;
+    padding: 10px;
+    margin-bottom: 10px;
+    opacity: 0;
+    animation: fadeInText 0s linear 2s forwards;
+}
+
+@keyframes fadeInText {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+
+}
+
+.span-tag {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav ul li {
+    list-style-type: none;
+    font-size: 20px;
+}
+
+.nav ul {
+    display: flex;
+    padding: 5px;
+    align-items: center;
+    gap: 40px;
+
+}
+
+.nav ul a {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    margin-left: 20px;
+}
+
+.nav ul a::before {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 0;
+    height: 4px;
+    /* Adjust the height of the underline */
+    background-color: #00b2b2;
+    /* Set the color of the underline */
+    transition: width 0.3s ease;
+    /* Smooth transition for width */
+}
+
+.nav ul a:hover::before {
+    width: 100%;
+}
+
+.nav {
+    position: sticky;
+    top:0px;
+    background-color: white;
+    margin-left: -1%;
+    margin-right: -1%;
+    margin-top: -2%;
+    z-index: 999;
+}
+
+.toggle-theme {
+    border: none;
+    margin-left: 720px;
+    background-color: transparent;
+    margin-top: 1px;
+}
+
+.name-p {
+    font-size: 80px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.subname-p {
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 50px;
+    margin-top: -80px;
+    animation: fadeIn 2s ease-out forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.work-img img {
+    margin-top: 30px;
+    width: 40px;
+    margin-left: 40px;
+    margin-bottom: 100px;
+}
+
+.aboutus-n h1 {
+    font-size: 30px;
+    color: #00b2b2;
+    margin-top: 40px;
+    margin-left: 45%;
+    font-family: Arial, Helvetica, sans-serif;
+    border-style: solid;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    display: inline;
+}
+
+.aboutus-n p {
+    font-size: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 50px;
+}
+
+.skills-n h1 {
+    font-size: 30px;
+    color: #00b2b2;
+    margin-top: 40px;
+    margin-left: 47%;
+    font-family: Arial, Helvetica, sans-serif;
+    border-style: solid;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    display: inline;
+}
+
+
+.skills-container {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.column {
+    flex: 1;
+    text-align: center;
+    padding: 1px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+}
+
+.skill {
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: #ffffff;
+    border-radius: 4px;
+}
+
+.project-tag h1 {
+    font-size: 30px;
+    color: #00b2b2;
+    margin-top: 150px;
+    margin-left: 45%;
+    font-family: Arial, Helvetica, sans-serif;
+    border-style: solid;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    display: inline-block;
+}
+
+.project-tag img {
+    width: 470px;
+    transition: 0.2s ease;
+    margin: 20px;
+    border-radius: 20px;
+    margin-left: 80px;
+}
+
+.last_img {
+    margin-left: 315px;
+}
+
+.project-tag a:hover img {
+    width: 500px;
+    transition: 0.5s ease;
+}
+
+.game-tag h1 {
+    font-size: 30px;
+    color: #00b2b2;
+    margin-top: 150px;
+    margin-left: 45%;
+    font-family: Arial, Helvetica, sans-serif;
+    border-style: solid;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    display: inline-block;
+}
+
+.game-tag img {
+    width: 400px;
+    margin: 20px;
+    margin-left: 10%;
+    border-radius: 20px;
+    transition: 0.2s ease;
+}
+
+.game-tag img:hover {
+    width: 430px;
+    height: 360px;
+    transition: 0.5s ease;
+}
+
+.div-fot {
+    background-color: #00b2b2;
+    margin-left: 15%;
+    margin-right: 20%;
+    border-radius: 4px;
+    margin-top: -50px;
+    position: relative;
+    z-index: 4;
+}
+
+.div-fot p {
+    font-size: 20px;
+    margin-left: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: inline-block;
+}
+
+#span-box {
+    font-size: 25px;
+    border-style: solid;
+    margin-left: 19px;
+    padding: 3px;
+    color: black;
+    border-radius: 6px;
+}
+
+.div-fot p a {
+    text-decoration: none;
+}
+
+#span-box:hover {
+    background-color: limegreen;
+    transition: 0.4s ease;
+}
+
+.footer-tag p {
+    padding: 50px;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: -55px;
+    padding-top: 90px;
+}
+
+.footer-tag {
+    position: relative;
+    /* Add position: relative; */
+    z-index: 1;
+    border-radius: 5px;
+    margin-left: -5px;
+    margin-right: -5px;
+    margin-bottom: -20px;
+}
+
+.footer-tag label {
+    font-size: 35px;
+    margin-left: 40%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: block;
+}
+
+.footer-tag img {
+    width: 40px;
+    height: 40px;
+    margin-left: 40%;
+    display: inline;
+}
+
+.footer-tag img:hover {
+    width: 40px;
+    height: 40px;
+    background-color: #ff6161;
+}
+
+/*mobile view content*/
+
+@media screen and (max-width: 768px) {
+    .chatbot {
+        margin-top: 150%;
+        margin-left: 86%;
+    }
+
+    .nav {
+        margin-right: -2%;
+        margin-left: -8px;
+        margin-top: -16px;
+    }
+
+    .nav ul {
+        flex-direction: row;
+        text-align: center;
+    }
+
+    .nav li {
+        display: block;
+    }
+
+    .questionArea {
+        margin-left: 17%;
+        padding: 200px;
+        margin-bottom: 170px;
+    }
+
+    .button-options {
+        margin-left: 24%;
+
+        margin-top: -480px;
+        font-size: 8px;
+    }
+
+    #p-tag {
+        left: 20%;
+        top: 210px;
+        color: white;
+        font-size: 17px;
+
+    }
+
+    .btn-op {
+        margin-top: 10px;
+        font-size: 15px;
+
+    }
+
+    .span-tag {
+        font-size: 16px;
+
+    }
+
+    .textArea {
+        margin-left: 60%;
+        margin-right: -100%;
+    }
+
+    .textArea1 {
+        margin-left: 24%;
+        font-size: 15px;
+        padding: 5px;
+    }
+
+    .close-btn {
+        margin-left: 30%;
+        font: 10px;
+        padding: 15px;
+    }
+
+    .span-tag {
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .toggle-theme {
+        margin-left: 94%;
+    }
+
+    .nav ul {
+        margin-right: 35px;
+    }
+
+    .name-p {
+        font-size: 80px;
+        margin-top: 100px;
+        margin-left: 10px;
+        margin-right: -50%;
+        margin-bottom: 100px;
+    }
+
+    .subname-p {
+        font-size: 25px;
+        line-height: 28px;
+        margin-top: -20px;
+        margin-left: 10px;
+        line-height: 60px;
+    }
+
+
+    .aboutus-n p {
+        margin-left: 3%;
+        margin-right: 0px;
+    }
+
+    .work-img img {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: -10px;
+    }
+
+    .work-img {
+        margin-bottom: 400px;
+    }
+
+    .last_img {
+        margin-left: 1px;
+    }
+
+    .project-tag h1 {
+        margin-left: 40%;
+    }
+
+    .project-tag img {
+        margin-left: 45px;
+    }
+    .skills-container{
+        flex-direction: column;
+    }
+    #span-box{
+        margin-left: 65%;
+    }
+    .div-fot{
+        margin-right: 10%;
+        margin-left: 8%;
+        border-radius: 10px;
+    }
+    .footer-tag label{
+        margin-left: 35%;
+    }
+    .footer-tag a{
+        margin-left: -2%;
+    }
+}
