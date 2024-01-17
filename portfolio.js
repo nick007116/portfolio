@@ -66,7 +66,7 @@
                     document.querySelector('.textArea1').style.display = 'block';
                 }
             }
-            const toggleThemeButton = document.querySelector(".toggle-theme");
+            const toggleThemeButton = document.querySelector(".toggle-theme1");
             const body = document.body;
 
             toggleThemeButton.addEventListener("click", () => {
@@ -80,7 +80,7 @@
                 body.classList.add("dark-mode");
             }
 
-            let element = document.querySelector('.toggle-theme');
+            let element = document.querySelector('.toggle-theme1');
             let button = document.getElementById('toggleButton');
             var isToggled = localStorage.getItem('isToggled') === 'true' || false;
             cor();
