@@ -246,7 +246,7 @@ body {
 .toggle-theme {
     border: none;
     margin-left: 720px;
-    background-color: white;
+    background-color: none;
     margin-top: 1px;
 }
 
