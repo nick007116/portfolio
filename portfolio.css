@@ -88,7 +88,7 @@ body {
 .chatbot {
     margin-top: 430px;
     margin-left: 92%;
-    position: fixed;
+    position: sticky;
     border: none;
     background-color: #ffffffe0;
     cursor: pointer;
