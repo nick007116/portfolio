@@ -67,23 +67,8 @@
                 }
             }
             const toggleThemeButton = document.querySelector(".toggle-theme1");
-            const body = document.body;
-
-            toggleThemeButton.addEventListener("click", () => {
-                body.classList.toggle("dark-mode");
-                localStorage.setItem("theme", body.classList.contains("dark-mode") ? "dark" : "light");
-            });
-
-            // Check for saved theme preference
-            const savedTheme = localStorage.getItem("theme");
-            if (savedTheme === "dark") {
-                body.classList.add("dark-mode");
-            }
-
-          const toggleThemeButton = document.querySelector(".toggle-theme1");
 const body = document.body;
 const element = document.querySelector('.toggle-theme');
-const button = document.getElementById('toggleButton');
 
 // Load saved theme preference
 const savedTheme = localStorage.getItem("theme");
@@ -114,3 +99,4 @@ function toggleBackgroundColor() {
 
 // Initial call to set the background color based on the saved state
 toggleBackgroundColor();
+
