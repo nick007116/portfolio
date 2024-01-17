@@ -9,7 +9,7 @@ body {
 body .nav {
     background-color: #f9f9f9;
 }
-body .toggle-theme{
+body .toggle-theme1{
     background-color: #f9f9f9;
 }
 
@@ -37,7 +37,7 @@ body.dark-mode .nav {
 body.dark-mode .nav ul a {
     color: white;
 }
-body.dark-mode .toggle-theme{
+body.dark-mode .toggle-theme1{
     background-color: #696969;
 }
 
@@ -249,7 +249,7 @@ body {
     z-index: 999;
 }
 
-.toggle-theme {
+.toggle-theme1{
     border: none;
     margin-left: 720px;
     margin-top: 1px;
