@@ -1,6 +1,7 @@
 /* Default theme (light mode) */
 body {
     background-color: #fff;
+    background-color: var(--background-color);
     transition: background-color 0.5s ease;
     color: black;
 }
